@@ -7,20 +7,70 @@ $light-grey : #666666;
 $dark-grey : #333333;
 
 body {
-  background: $main-color;
+  background-color: $main-color;
 }
 
+.lander {
+  background-color: $alt-color;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 760px;
+
+    .nav {
+      background-color: $dark-grey;
+      color: $alt-color;
+      width: 100%;
+    }
+
+    #description {
+      text-align: center;
+      width: 80%;
+      font-size: 20px;
+      font-weight: 100;
+    }
+}
+
+
+
 .deal-container {
+
   color: white;
   display:flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   height: 850px;
+
   .deal {
     background: $light-grey;
     border-radius: 10px;
     height: 340px;
     width: 70%;
   }
+}
+
+#more-deals {
+  background-color: $alt-color;
+  color: $main-color;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+  width:100%;
+  height: 100px;
+}
+
+#footer {
+  background-color: $dark-grey;
+  color: $light-grey;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-text {
+  width: 50%;
+  text-align: center;
 }
