@@ -46,31 +46,41 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif; }
 
 .lander {
   background-color: #99cccc;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: space-around;
+  flex-basis: 2px;
   height: 760px; }
   .lander .nav {
     background-color: #333333;
     color: #99cccc;
-    width: 100%; }
+    width: 100%;
+    margin: 0px; }
     .lander .nav #nav-logo {
       width: 50px; }
   .lander #img-ufo {
-    width: 400px; }
+    width: 300px; }
   .lander #description {
     text-align: center;
     width: 80%;
-    font-size: 20px;
-    font-weight: 100; }
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 10px; }
+    .lander #description #description-bold {
+      font-weight: 600; }
   .lander #btn-more {
     width: 78vw;
     height: 80px;
     border: 0px;
+    margin-bottom: 35px;
     color: #ffffff;
     background-color: #666666;
     border-bottom: 6px solid #333333;
