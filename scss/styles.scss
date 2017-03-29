@@ -21,6 +21,10 @@ body {
   height: 760px;
 
   .nav {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: space-between;
     background-color: $dark-grey;
     color: $alt-color;
     width: 100%;
@@ -28,9 +32,22 @@ body {
 
     #nav-logo {
       width: 50px;
+      margin-left: 20px;
     }
 
     #nav-text-bold {
+      font-size: 24px;
+      font-weight: 800;
+      margin-right: 60%;
+      #nav-text {
+        font-weight: initial;
+      }
+    }
+
+    #hamburger-thing {
+      height: 70%;
+      width: 35px;
+      margin-right: 20px;
     }
   }
 

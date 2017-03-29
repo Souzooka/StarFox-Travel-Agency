@@ -58,12 +58,27 @@ body {
   flex-basis: 2px;
   height: 760px; }
   .lander .nav {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333333;
     color: #99cccc;
     width: 100%;
     margin: 0px; }
     .lander .nav #nav-logo {
-      width: 50px; }
+      width: 50px;
+      margin-left: 20px; }
+    .lander .nav #nav-text-bold {
+      font-size: 24px;
+      font-weight: 800;
+      margin-right: 60%; }
+      .lander .nav #nav-text-bold #nav-text {
+        font-weight: initial; }
+    .lander .nav #hamburger-thing {
+      height: 70%;
+      width: 35px;
+      margin-right: 20px; }
   .lander #img-ufo {
     width: 300px; }
   .lander #description {
