@@ -58,11 +58,23 @@ body {
     background-color: #333333;
     color: #99cccc;
     width: 100%; }
+    .lander .nav #nav-logo {
+      width: 50px; }
+  .lander #img-ufo {
+    width: 400px; }
   .lander #description {
     text-align: center;
     width: 80%;
     font-size: 20px;
     font-weight: 100; }
+  .lander #btn-more {
+    width: 78vw;
+    height: 80px;
+    border: 0px;
+    color: #ffffff;
+    background-color: #666666;
+    border-bottom: 6px solid #333333;
+    font-size: 20px; }
 
 .deal-container {
   color: white;

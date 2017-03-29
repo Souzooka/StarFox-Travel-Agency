@@ -17,18 +17,39 @@ body {
   align-items: center;
   height: 760px;
 
-    .nav {
-      background-color: $dark-grey;
-      color: $alt-color;
-      width: 100%;
+  .nav {
+    background-color: $dark-grey;
+    color: $alt-color;
+    width: 100%;
+
+    #nav-logo {
+      width: 50px;
     }
 
-    #description {
-      text-align: center;
-      width: 80%;
-      font-size: 20px;
-      font-weight: 100;
+    #nav-text-bold {
     }
+  }
+
+  #img-ufo {
+    width: 400px;
+  }
+
+  #description {
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  #btn-more {
+    width: 78vw;
+    height: 80px;
+    border: 0px;
+    color: $main-color;
+    background-color: $light-grey;
+    border-bottom: 6px solid $dark-grey;
+    font-size: 20px;
+  }
 }
 
 
