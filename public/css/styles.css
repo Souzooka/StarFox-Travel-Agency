@@ -46,4 +46,17 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #333333; }
+  background: #ffffff; }
+
+.deal-container {
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 850px; }
+  .deal-container .deal {
+    background: #666666;
+    border-radius: 10px;
+    height: 340px;
+    width: 70%; }

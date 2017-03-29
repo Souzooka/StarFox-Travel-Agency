@@ -1,7 +1,26 @@
 @import "partials/reset";
 
-$dark-color : #333333;
+// these should be the only used colors on the page
+$main-color : #ffffff;
+$alt-color : #99cccc;
+$light-grey : #666666;
+$dark-grey : #333333;
 
 body {
-  background: $dark-color;
+  background: $main-color;
+}
+
+.deal-container {
+  color: white;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 850px;
+  .deal {
+    background: $light-grey;
+    border-radius: 10px;
+    height: 340px;
+    width: 70%;
+  }
 }
