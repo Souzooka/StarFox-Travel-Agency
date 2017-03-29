@@ -15,16 +15,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.hr-full-width {
-  // ????
-  width: calc(100% - 2px);
-}
-
-.hr-grey-line {
-  border-color: #000 transparent #474747 transparent;
-  border-size: 1px;
-  border-style: solid;
-  height: 0;
+.hr-embossed {
+  width:100%;
+  height:0;
+  color:none;
+  background:none;
+  border:none;
+  border-top:1px solid #666;
+  border-bottom:1px solid #999;
 }
 
 .lander {
@@ -113,9 +111,6 @@ body {
   height: 850px;
 
   .deal {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
     background: $light-grey;
     border-radius: 10px;
     height: 340px;
