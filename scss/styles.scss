@@ -24,39 +24,63 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-basis: 2px;
-  height: 760px;
   width: 100%;
 
-  .nav {
-    display: flex;
-    flex: 0 0 50px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $dark-grey;
-    color: $alt-color;
+  .nav-container {
     width: 100%;
-    margin-top: 2px;
+    position: absolute;
+    top: 3px;
 
-    #nav-logo {
-      width: 10vw;
-      margin-left: 20px;
-    }
 
-    #nav-text-bold {
-      font-size: 4vw;
-      font-weight: 700;
+
+    .nav {
+      display: flex;
+      flex: 0 0 50px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $dark-grey;
+      color: $alt-color;
+      width: 100%;
+      height: 50px;
       position: absolute;
-      right: 69vw;
-      #nav-text {
-        font-weight: initial;
+      top: 5px;
+
+      #nav-logo {
+        width: 10vw;
+        margin-left: 20px;
+      }
+
+      #nav-text-bold {
+        font-size: 4vw;
+        font-weight: 700;
+        position: absolute;
+        right: 69vw;
+        #nav-text {
+          font-weight: initial;
+        }
+      }
+
+      #hamburger-thing {
+        height: 70%;
+        width: 35px;
+        margin-right: 20px;
       }
     }
 
-    #hamburger-thing {
-      height: 70%;
-      width: 35px;
-      margin-right: 20px;
+    .nav-option {
+      position: relative;
+      top: 55px;
+      margin-top: 2px;
+
+      span {
+        position: relative;
+        left: 5vw;
+      }
     }
+
+    .nav-head {
+    }
+
   }
 
   #img-ufo {
@@ -69,7 +93,7 @@ body {
     font-size: 5vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 5vh;
     margin-bottom: 10px;
 
     #description-bold {
@@ -79,7 +103,7 @@ body {
 
   #btn-more {
     width: 78vw;
-    height: 80px;
+    height: 9vh;
     border: 0px;
     margin-bottom: 35px;
     color: $main-color;

@@ -61,31 +61,43 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-basis: 2px;
-  height: 760px;
   width: 100%; }
-  .lander .nav {
-    display: flex;
-    flex: 0 0 50px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333333;
-    color: #99cccc;
+  .lander .nav-container {
     width: 100%;
-    margin-top: 2px; }
-    .lander .nav #nav-logo {
-      width: 10vw;
-      margin-left: 20px; }
-    .lander .nav #nav-text-bold {
-      font-size: 4vw;
-      font-weight: 700;
+    position: absolute;
+    top: 3px; }
+    .lander .nav-container .nav {
+      display: flex;
+      flex: 0 0 50px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333333;
+      color: #99cccc;
+      width: 100%;
+      height: 50px;
       position: absolute;
-      right: 69vw; }
-      .lander .nav #nav-text-bold #nav-text {
-        font-weight: initial; }
-    .lander .nav #hamburger-thing {
-      height: 70%;
-      width: 35px;
-      margin-right: 20px; }
+      top: 5px; }
+      .lander .nav-container .nav #nav-logo {
+        width: 10vw;
+        margin-left: 20px; }
+      .lander .nav-container .nav #nav-text-bold {
+        font-size: 4vw;
+        font-weight: 700;
+        position: absolute;
+        right: 69vw; }
+        .lander .nav-container .nav #nav-text-bold #nav-text {
+          font-weight: initial; }
+      .lander .nav-container .nav #hamburger-thing {
+        height: 70%;
+        width: 35px;
+        margin-right: 20px; }
+    .lander .nav-container .nav-option {
+      position: relative;
+      top: 55px;
+      margin-top: 2px; }
+      .lander .nav-container .nav-option span {
+        position: relative;
+        left: 5vw; }
   .lander #img-ufo {
     width: 55vw; }
   .lander #description {
@@ -94,13 +106,13 @@ body {
     font-size: 5vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 5vh;
     margin-bottom: 10px; }
     .lander #description #description-bold {
       font-weight: 600; }
   .lander #btn-more {
     width: 78vw;
-    height: 80px;
+    height: 9vh;
     border: 0px;
     margin-bottom: 35px;
     color: #ffffff;
