@@ -29,73 +29,90 @@ body {
 
   @media #{$small} {
     display: block;
-    padding: 200px;
-    margin-bottom: 100px;
+    height: 240px;
     background-color: $alt-color;
 
     #header-logo {
       width: 5vw;
     }
-}
-
+  }
 }
 
 .nav-container {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+
+  @media #{$small} {
+    position: relative;
+    left: 5%;
+    }
+
+  .nav {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $dark-grey;
+    color: $alt-color;
     width: 100%;
+    height: 50px;
     position: absolute;
-    top: 2px;
 
-
-
-    .nav {
-      display: flex;
-      flex: 0 0 50px;
-      align-items: center;
-      justify-content: space-between;
-      background-color: $dark-grey;
-      color: $alt-color;
-      width: 100%;
-      height: 50px;
-      position: absolute;
-
-      #nav-logo {
-        width: 10vw;
-        margin-left: 20px;
-      }
-
-      #nav-text-bold {
-        font-size: 4vw;
-        font-weight: 700;
-        position: absolute;
-        right: 69vw;
-        #nav-text {
-          font-weight: initial;
-        }
-      }
-
-      #nav-option-btn {
-        height: 70%;
-        width: 35px;
-        margin-right: 20px;
-      }
-    }
-
-    .nav-option {
+    @media #{$small} {
       position: relative;
-      top: 50px;
-      border-top: 1px solid $alt-color;
-      visibility: hidden;
+      width: 90%;
+      bottom: 25px;
+      border-radius: 5px;
+    }
 
-      span {
-        position: relative;
-        left: 5vw;
+    #nav-logo {
+      width: 10vw;
+      margin-left: 20px;
+    }
+
+    #nav-text-bold {
+      font-size: 4vw;
+      font-weight: 700;
+      position: absolute;
+      right: 69vw;
+      #nav-text {
+        font-weight: initial;
       }
     }
 
-    .nav-head {
+    #nav-option-btn {
+      height: 70%;
+      width: 35px;
+      margin-right: 20px;
+    }
+  }
+
+  .nav-option {
+    position: relative;
+    top: 50px;
+    border-top: 1px solid $alt-color;
+    visibility: hidden;
+
+    @media #{$small} {
+      display: none;
     }
 
+    span {
+      position: relative;
+      left: 5vw;
+    }
   }
+
+  .nav-head {
+
+    #nav-option-text {
+      display: none;
+    }
+  }
+
+
+}
 
 .lander {
   background-color: $alt-color;
@@ -105,6 +122,13 @@ body {
   justify-content: space-around;
   flex-basis: 2px;
   width: 100%;
+
+  @media #{$small} {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 5px;
+  }
 
   #img-ufo {
     width: 55vw;
