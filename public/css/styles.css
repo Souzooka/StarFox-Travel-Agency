@@ -63,6 +63,19 @@ body {
       background-color: #99cccc; }
       .banner #header-logo {
         width: 5vw; } }
+  @media only screen and (min-width: 1100px) {
+    .banner {
+      display: block;
+      height: 240px;
+      background-color: #99cccc; }
+      .banner #header-logo {
+        width: 5vw; } }
+
+@media only screen and (min-width: 1100px) {
+  .main-content {
+    width: 1100px;
+    position: relative;
+    left: calc((100% - 1100px) / 2); } }
 
 .nav-container {
   width: 100%;
@@ -72,6 +85,9 @@ body {
     .nav-container {
       position: relative;
       left: 5%; } }
+  @media only screen and (min-width: 1100px) {
+    .nav-container {
+      position: relative; } }
   .nav-container .nav {
     display: flex;
     flex: 0 0 50px;
@@ -203,6 +219,11 @@ body {
     height: 340px;
     width: 80%;
     text-align: center; }
+    @media only screen and (min-width: 600px) and (max-width: 964px) {
+      .deal-container .deal {
+        width: 90%; } }
+    .deal-container .deal #header-logo {
+      width: 5vw; }
     .deal-container .deal .deal-title {
       font-size: 4.5vw;
       font-weight: 700;
@@ -217,6 +238,17 @@ body {
       border: none;
       border-top: 1px solid #555555;
       border-bottom: 1px solid #777777; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .deal-container .deal .hr-embossed {
+          display: none; } }
+    @media only screen and (min-width: 600px) and (max-width: 964px) {
+      .deal-container .deal .vertical-line {
+        width: 0;
+        height: 100%;
+        border-left: 1px solid #555555;
+        border-right: 1px solid #777777;
+        position: relative;
+        left: 50%; } }
     .deal-container .deal .deal-price {
       font-size: 12vw;
       font-weight: 300;
@@ -267,3 +299,6 @@ body {
 #footer-text {
   width: 50%;
   text-align: center; }
+  @media only screen and (min-width: 600px) and (max-width: 964px) {
+    #footer-text {
+      width: 100%; } }
