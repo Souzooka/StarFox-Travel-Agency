@@ -26,6 +26,7 @@ body {
 .banner {
   display: none;
 
+
   @media #{$small} {
     display: block;
     height: 240px;
@@ -64,6 +65,7 @@ body {
   @media #{$small} {
     position: relative;
     left: 5%;
+    width: 90%;
   }
 
   @media #{$large} {
@@ -83,7 +85,6 @@ body {
 
     @media #{$small} {
       position: relative;
-      width: 90%;
       bottom: 25px;
       border-radius: 5px;
     }
@@ -243,12 +244,12 @@ body {
   height: 850px;
 
   @media #{$small} {
-      height: 550px;
+      height: 75vw;
     }
 
   .deal-the-moon {
     @media #{$small} {
-      margin-bottom: -40px;
+      margin-bottom: -0.5vw;
     }
   }
 
@@ -260,7 +261,7 @@ body {
     text-align: center;
 
     @media #{$small} {
-      height: 220px;
+      height: 30vw;
       width: 90%;
     }
 
@@ -276,10 +277,11 @@ body {
       top: 5px;
 
       @media #{$small} {
-        left: 420px;
+        left: 55%;
         top: 40px;
         font-size: 2.6vw;
         text-align: left;
+        max-width: 250px;
       }
     }
 
@@ -300,7 +302,7 @@ body {
     .vertical-line {
       @media #{$small} {
         width: 0;
-        height: 220px;
+        height: 30vw;
         border-left: 1px solid #555555;
         border-right: 1px solid #777777;
         position: absolute;
@@ -317,7 +319,7 @@ body {
       @media #{$small} {
         position: relative;
         bottom: 55px;
-        right: 190px;
+        right: 25%;
         font-size: 9vw;
       }
     }
@@ -348,9 +350,9 @@ body {
 
       @media #{$small} {
         text-align: left;
-        width: 270px;
+        width: 35vw;
         font-size: 14px;
-        top: -45%;
+        top: -40%;
         left: 58%;
       }
     }
