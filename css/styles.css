@@ -86,14 +86,15 @@ body {
         right: 69vw; }
         .lander .nav-container .nav #nav-text-bold #nav-text {
           font-weight: initial; }
-      .lander .nav-container .nav #hamburger-thing {
+      .lander .nav-container .nav #nav-option-btn {
         height: 70%;
         width: 35px;
         margin-right: 20px; }
     .lander .nav-container .nav-option {
       position: relative;
       top: 50px;
-      border-top: 1px solid #99cccc; }
+      border-top: 1px solid #99cccc;
+      visibility: hidden; }
       .lander .nav-container .nav-option span {
         position: relative;
         left: 5vw; }
