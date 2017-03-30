@@ -237,6 +237,12 @@ body {
       padding: 20px;
       position: relative;
       top: 5px; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .deal-container .deal .deal-title {
+          left: 420px;
+          top: 40px;
+          font-size: 2.6vw;
+          text-align: left; } }
     .deal-container .deal .hr-embossed {
       width: 100%;
       height: 0;
@@ -261,12 +267,23 @@ body {
       font-weight: 300;
       padding: 11px;
       padding-top: 40px; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .deal-container .deal .deal-price {
+          position: relative;
+          bottom: 55px;
+          right: 190px;
+          font-size: 9vw; } }
     .deal-container .deal .white-line {
       width: 42vw;
       height: 10px;
       background-color: #ffffff;
       position: relative;
       left: 24%; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .deal-container .deal .white-line {
+          bottom: 50px;
+          left: 8%;
+          width: 32vw; } }
     .deal-container .deal .deal-description {
       text-align: center;
       width: 46vw;
@@ -276,6 +293,13 @@ body {
       font-size: 17px;
       font-weight: 300;
       line-height: 20px; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .deal-container .deal .deal-description {
+          text-align: left;
+          width: 270px;
+          font-size: 14px;
+          top: -45%;
+          left: 58%; } }
 
 .deal-extra {
   display: none; }
