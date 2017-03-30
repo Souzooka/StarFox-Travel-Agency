@@ -3,7 +3,7 @@ $alt-color : #99cccc;
 $light-grey : #666666;
 $dark-grey : #333333;
 $phone : 0px;
-$small : 600px;
+$small : "only screen and (min-width:600px) and (max-width:964px)";
 $medium : 964px;
 $large : 1100px;
 
@@ -26,6 +26,18 @@ body {
 
 .banner {
   display: none;
+
+  @media #{$small} {
+    display: block;
+    padding: 200px;
+    margin-bottom: 100px;
+    background-color: $alt-color;
+
+    #header-logo {
+      width: 5vw;
+    }
+}
+
 }
 
 .nav-container {
