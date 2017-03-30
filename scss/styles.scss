@@ -1,13 +1,16 @@
-@import "partials/reset";
-
-@include reset();
-
-// these should be the only used colors on the page
 $main-color : #ffffff;
 $alt-color : #99cccc;
 $light-grey : #666666;
 $dark-grey : #333333;
+$phone : 0px;
+$small : 600px;
+$medium : 964px;
+$large : 1100px;
 
+@import "partials/reset";
+@include reset();
+
+@import "partials/tablet";
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -21,16 +24,11 @@ body {
 
 }
 
-.lander {
-  background-color: $alt-color;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-around;
-  flex-basis: 2px;
-  width: 100%;
+.banner {
+  display: none;
+}
 
-  .nav-container {
+.nav-container {
     width: 100%;
     position: absolute;
     top: 2px;
@@ -86,6 +84,15 @@ body {
     }
 
   }
+
+.lander {
+  background-color: $alt-color;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 2px;
+  width: 100%;
 
   #img-ufo {
     width: 55vw;
