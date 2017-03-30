@@ -91,17 +91,26 @@ body {
     .nav-container .nav #nav-logo {
       width: 10vw;
       margin-left: 20px; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .nav-container .nav #nav-logo {
+          display: none; } }
     .nav-container .nav #nav-text-bold {
       font-size: 4vw;
       font-weight: 700;
       position: absolute;
       right: 69vw; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .nav-container .nav #nav-text-bold {
+          display: none; } }
       .nav-container .nav #nav-text-bold #nav-text {
         font-weight: initial; }
     .nav-container .nav #nav-option-btn {
       height: 70%;
       width: 35px;
       margin-right: 20px; }
+      @media only screen and (min-width: 600px) and (max-width: 964px) {
+        .nav-container .nav #nav-option-btn {
+          display: none; } }
   .nav-container .nav-option {
     position: relative;
     top: 50px;
@@ -115,6 +124,18 @@ body {
       left: 5vw; }
   .nav-container .nav-head #nav-option-text {
     display: none; }
+    @media only screen and (min-width: 600px) and (max-width: 964px) {
+      .nav-container .nav-head #nav-option-text {
+        width: 60%;
+        position: relative;
+        left: 20%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 2vw; } }
+    .nav-container .nav-head #nav-option-text #selected-page {
+      color: #ffffff; }
 
 .lander {
   background-color: #99cccc;
@@ -129,10 +150,16 @@ body {
       width: 90%;
       position: relative;
       left: 5%;
-      border-radius: 5px; } }
+      border-radius: 5px;
+      margin-top: 20px; } }
   .lander #img-ufo {
     width: 55vw;
     padding-top: 50px; }
+    @media only screen and (min-width: 600px) and (max-width: 964px) {
+      .lander #img-ufo {
+        padding-top: 0px;
+        margin-top: -60px;
+        margin-bottom: -95px; } }
   .lander #description {
     text-align: center;
     width: 80%;
