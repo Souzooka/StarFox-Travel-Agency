@@ -63,14 +63,12 @@ body {
       background-color: #99cccc;
       background-image: url("img/header_bg.svg"); } }
   .banner #header-logo {
-    width: 20vw;
+    width: 200px;
     position: relative;
-    top: 10%;
-    left: 40%; }
+    left: calc(50% - 100px); }
   .banner #header-text-bold {
     position: relative;
-    top: 5%;
-    left: 5%;
+    left: calc(23% - 200px);
     text-align: center;
     font-weight: 600;
     font-size: 3.3vw; }

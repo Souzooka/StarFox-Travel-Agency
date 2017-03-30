@@ -35,16 +35,14 @@ body {
   }
 
   #header-logo {
-    width: 20vw;
+    width: 200px;
     position: relative;
-    top: 10%;
-    left: 40%;
+    left: calc(50% - 100px);
   }
 
   #header-text-bold {
     position: relative;
-    top: 5%;
-    left: 5%;
+    left: calc(23% - 200px);
     text-align: center;
     font-weight: 600;
     font-size: 3.3vw;
