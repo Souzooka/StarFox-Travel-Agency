@@ -170,6 +170,9 @@ body {
       font-weight: 300;
       line-height: 20px; }
 
+.deal-extra {
+  display: none; }
+
 #more-deals {
   background-color: #99cccc;
   color: #ffffff;
