@@ -259,8 +259,13 @@ body {
   height: 850px;
 
   @media #{$small} {
-      height: 75vw;
-    }
+    height: 75vw;
+  }
+
+  @media #{$medium} {
+    flex-flow: row nowrap;
+    height: 40vw;
+  }
 
   .deal-the-moon {
     @media #{$small} {
@@ -277,7 +282,11 @@ body {
 
     @media #{$small} {
       height: 30vw;
-      width: 90%;
+      width: 30%;
+    }
+
+    @media #{$medium} {
+      width: calc(80% / 3);
     }
 
     #header-logo {
@@ -298,6 +307,13 @@ body {
         text-align: left;
         max-width: 250px;
       }
+
+      @media #{$medium} {
+        left: 0%;
+        font-size: 24px;
+        text-align: center;
+        top: -5px;
+      }
     }
 
     .hr-embossed {
@@ -312,6 +328,12 @@ body {
       @media #{$small} {
         display: none;
       }
+
+      @media #{$medium} {
+        display: block;
+        position: relative;
+        bottom: 20px;
+      }
     }
 
     .vertical-line {
@@ -322,6 +344,10 @@ body {
         border-right: 1px solid #777777;
         position: absolute;
         left: 50%;
+      }
+
+      @media #{$medium} {
+        display: none;
       }
     }
 
@@ -337,6 +363,12 @@ body {
         right: 25%;
         font-size: 9vw;
       }
+
+      @media #{$medium} {
+        font-size: 60px;
+        left: 0%;
+        bottom: 5%;
+      }
     }
 
     .white-line {
@@ -350,6 +382,12 @@ body {
         bottom: 50px;
         left: 8%;
         width: 32vw;
+      }
+
+      @media #{$medium} {
+        width: 75%;
+        left: 12.5%;
+        bottom: 20px;
       }
     }
 
@@ -370,6 +408,13 @@ body {
         top: -40%;
         left: 58%;
       }
+
+      @media #{$medium} {
+        top: 0%;
+        left: 10%;
+        text-align: center;
+        width: 80%;
+      }
     }
   }
 }
@@ -383,7 +428,7 @@ body {
   color: $main-color;
   font-size: 24px;
   display: flex;
-  width:100%;
+  width: 100%;
   height: 100px;
   justify-content: center;
   align-items: center;
@@ -392,6 +437,10 @@ body {
     font-weight: 700;
     font-size: 30px;
     margin-right: 20px;
+  }
+
+  @media #{$medium} {
+    display: none;
   }
 }
 
